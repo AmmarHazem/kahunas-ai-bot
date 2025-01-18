@@ -7,12 +7,8 @@ export class AiController {
   constructor(private readonly aiService: AiService) {}
 
   @Post('chat')
-  public async chat(
-    @Body() chatRequestDto: ChatRequestDto,
-  ): Promise<{ response: string }> {
-    const response = await this.aiService.generateResponse(
-      chatRequestDto.prompt,
-    );
+  public async chat(@Body() chatRequestDto: ChatRequestDto) {
+    const response = await this.aiService.generateResponse(chatRequestDto);
     return { response };
   }
 }

@@ -6,6 +6,7 @@
 .cursorrules
 
 *.sqlite
+*.db
 
 # Logs
 logs
