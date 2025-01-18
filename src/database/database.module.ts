@@ -7,7 +7,7 @@ import { ChatLog } from './chat-log.entity';
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'ai_bot.db',
-      entities: [ChatLog],
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
     TypeOrmModule.forFeature([ChatLog]),

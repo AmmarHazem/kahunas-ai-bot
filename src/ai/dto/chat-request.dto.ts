@@ -5,8 +5,4 @@ export class ChatRequestDto {
   @IsNotEmpty()
   @MaxLength(1000)
   readonly prompt: string;
-
-  @IsString()
-  @IsNotEmpty()
-  readonly threadId: string;
 }
