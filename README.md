@@ -77,6 +77,16 @@ npm run test:cov
 - OpenAI - GPT-3.5 model
 - JWT - Authentication
 - Class Validator - DTO validation
+- AWS EC2 - Cloud hosting
+- AWS CloudWatch - Monitoring and logging
+
+## Deployment
+
+The application is hosted on an AWS EC2 instance with CloudWatch monitoring enabled. You can access the live API at:
+
+```
+http://3.110.156.167:80
+```
 
 ## Project Structure
 
